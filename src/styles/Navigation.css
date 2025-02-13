@@ -3,7 +3,29 @@
   height: auto;
 }
 
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
 nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
   position: fixed;
   top: 3rem;
   left: 4rem;
