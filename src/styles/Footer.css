@@ -21,3 +21,7 @@ footer {
     text-decoration: underline;
     text-decoration-thickness: 1px;
 }
+
+.footer-link:hover {
+    opacity: 0.8;
+}
