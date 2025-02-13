@@ -1,0 +1,23 @@
+footer {
+    position: fixed;
+    bottom: 3rem;
+    width: 100%;
+    text-align: right;
+    color: var(--foreground);
+}
+
+.footer-left {
+    position: fixed;
+    left: 4rem;
+}
+
+.footer-right {
+    position: fixed;
+    right: 4rem;
+}
+
+.footer-link {
+    color: var(--foreground);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
