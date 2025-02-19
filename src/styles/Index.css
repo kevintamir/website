@@ -11,5 +11,7 @@ body {
 }
   
 .name-container {
+    top: 0;
+    left: 0;
     font-size: 15vw;
 }

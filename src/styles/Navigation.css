@@ -1,33 +1,131 @@
 .logo {
   width: 3rem;
   height: auto;
+  cursor: pointer;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-left: 1rem;
-}
-
-.nav-links a {
+a {
   text-decoration: none;
-  color: white;
-  font-size: 1em;
-}
-
-.nav-links a:hover {
-  opacity: 0.8;
+  color: inherit;
 }
 
 nav {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  top: 0;
   position: fixed;
-  top: 3rem;
-  left: 4rem;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+
+.toggle-btn {
+  display: flex;
+  justify-content: right;
+}
+
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75em 2em 1.5em 2em;
+  background: black;
+  outline: none;
+  border: none;
+  width: 28px;
+  height: 20px;
+  transition: all 0.250s ease-out;
+  cursor: pointer;
+}
+
+.burger:before, 
+.burger:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: white;
+  transition: all 0.250s ease-out;
+  will-change: transform;
+}
+
+.burger:before {
+  transform: translateY(-3px);
+}
+
+.burger:after {
+  transform: translateY(3px);
+}
+
+.active.burger:before {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.active.burger:after {
+  transform: translateY(0px) rotate(-45deg);
+}
+
+.overlay {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0%;
+  /* z-index: -99; */
+  backdrop-filter: blur(20px);
+  will-change: transform;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 5vh 20vh rgba(0, 0, 0, 0.5);
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.menu-item {
+  display: flex;
+  cursor: pointer;
+}
+
+.menu-item p {
+  position: relative;
+  text-align: center;
+  font-size: 3vw;
+  line-height: 80%;
+  will-change: transform;
+  transition: letter-spacing 0.250s;
+}
+
+.menu-item p:hover {
+  letter-spacing: 0.05em;
+}
+
+.sub-nav {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5em;
+}
+
+.sub-nav p {
+  font-size: 1.5vw;
+}
+
+.sub-nav p:hover {
+  opacity: 0.8;
 }

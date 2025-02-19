@@ -1,6 +1,6 @@
 footer {
     position: fixed;
-    bottom: 3rem;
+    bottom: 2rem;
     width: 100%;
     text-align: right;
     color: var(--foreground);
@@ -8,18 +8,17 @@ footer {
 
 .footer-left {
     position: fixed;
-    left: 4rem;
+    left: 2rem;
 }
 
 .footer-right {
     position: fixed;
-    right: 4rem;
+    right: 2rem;
 }
 
 .footer-link {
     color: var(--foreground);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
+    opacity: 1;
 }
 
 .footer-link:hover {
