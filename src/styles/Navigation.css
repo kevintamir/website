@@ -68,15 +68,14 @@ nav {
 }
 
 .overlay {
+  align-content:center;
   position: fixed;
   top: -100%;
-  left: 0;
   width: 100vw;
   height: 100vh;
   background: black;
   opacity: 0%;
   /* z-index: -99; */
-  backdrop-filter: blur(20px);
   will-change: transform;
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 5vh 20vh rgba(0, 0, 0, 0.5);
@@ -86,8 +85,8 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   gap: 1em;
   flex-direction: column;
@@ -115,7 +114,7 @@ nav {
 
 .sub-nav {
   position: absolute;
-  bottom: 5%;
+  bottom: 30%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
