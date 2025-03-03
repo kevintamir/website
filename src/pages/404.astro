@@ -1,8 +1,9 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import "../styles/global.css";
-import "../styles/Projects.css";
-const pageTitle = "About Me";
+import "../styles/404.css";
+const pageTitle = "Kevin Tamir";
 ---
 
 <html lang="en">
@@ -19,21 +20,11 @@ const pageTitle = "About Me";
 	</head>
 	<body>
 		<Navigation />
-        <div class="proj-parent">
-            <div class="proj-container" id="Portfolio">
-                <div class="proj-img">
-                    <img src="/proj1.png"/>
-                </div>
-                <div class="proj">
-                    <div class="proj-title default-font">
-                        <a href="#Portfolio">Portfolio</a>
-                    </div>
-                    <div class="proj-txt secondary-font">
-                        My first professional portfolio, built with Astro.
-                    </div>
-                </div>
-            </div>
+        <div class="_404">
+            <h1 class="default-font">Whoops!</h1>
+            <p class="_404-p secondary-font">The page you were looking for wasn't found. <a class="_404-link" href="/">Go back to home</a>.</p>
         </div>
+		<Footer />
 		<script src="../scripts/index.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
 	</body>
