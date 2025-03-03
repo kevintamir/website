@@ -1,0 +1,44 @@
+---
+import Navigation from '../components/Navigation.astro';
+import "../styles/global.css";
+import "../styles/About.css";
+const pageTitle = "About Me";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="ico" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<Navigation />
+		<div class="abt-container">
+			<img class="abt-pfp" alt="Kevin Tamir" src="/pfp.jpg" width="200" height="200"/>
+			<article class="abt-txt secondary-font fs-m">
+				<p class="abt-p">
+					Hi! I currently live in Northern Virginia and attend high school. 
+					The current college plan is to be a Hokie for the Class of 2029. 
+					I've previously competed in <a class= "abt-link" href="https://www.vlr.gg/player/48889/erkhes" target="_blank">VALORANT</a>.
+				</p>
+				<p class="abt-p">
+					I was born in Northern Virginia and have lived here for most of
+					my life, save three or so years in Irvine, California and another
+					year in Ulaanbaatar, Mongolia.
+				</p>
+				<p class="abt-p">
+					You can find my socials in navigation, or you can find my Twitter
+					here: <a class="abt-link" href="https://x.com/im_kevin_tamir">@im_kevin_tamir</a>
+				</p>
+			</article>
+		</div>
+		<script src="../scripts/index.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+	</body>
+</html>
